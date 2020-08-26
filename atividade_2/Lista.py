@@ -11,14 +11,15 @@ class Lista:
   def __str__(self):
 
     if self.inicio:
-      retorno = ""
+      retorno = "\033[96m---------------------------------------------------------------------------------------------------------|\033[00m\n"
+      retorno += "\033[96m{: ^34} \033[00m|\033[96m {: ^30s}\033[00m | \033[96m{: ^34s} |\033[00m\n".format('endereço do nó', 'dado','proximo')
       no_auxiliar = self.inicio
-      retorno += "\033[96m{}\033[00m - {}\n".format(no_auxiliar.dado, no_auxiliar.proximo)
-
+      
       while( no_auxiliar.proximo ):
-        retorno += "\033[96m{}\033[00m\n".format(no_auxiliar.dado)
+        retorno += "{}   |\033[96m{:<30}\033[00m  | {}\n".format(no_auxiliar, no_auxiliar.dado , no_auxiliar.proximo)
         no_auxiliar = no_auxiliar.proximo
 
+      retorno += "{}   |\033[96m{:<30}\033[00m  | {}\n".format(no_auxiliar, no_auxiliar.dado , no_auxiliar.proximo)
       return retorno
 
     else:
