@@ -1,34 +1,29 @@
 from Lista import Lista
 
+print("Cria a lista")
 lista = Lista()
+
+print("\n================== \nTesta funções de print antes de preencher a lista")
+print("Print de debug:")
 print(lista)
+print("Print normal:")
+lista.print()
+print("Print reverso:")
+lista.printReverso()
+print("\n")
+
+print("Preenchendo a lista...")
 
 lista.adicionar(10)
 lista.adicionar(1)
 lista.adicionar(30)
 lista.adicionar(1330)
 lista.adicionar('a')
+
+print("\n================== \nTesta funções de print depois de preencher a lista")
+print("Print de debug:")
 print(lista)
-
-
-# lista2 = Lista()
-# lista2.inserirOrdenado(1)
-# lista2.inserirOrdenado(2)
-# lista2.inserirOrdenado(3)
-# lista2.inserirOrdenado(4)
-# lista2.inserirOrdenado(10)
-# lista2.inserirOrdenado(5)
-# lista2.inserirOrdenado(4)
-
-# lista2.inserirOrdenado(42)
-
-# lista2.inserirOrdenado(41)
-# lista2.inserirOrdenado(44)
-
-# lista2.inserirOrdenado(40)
-
-# lista2.inserirOrdenado(49)
-
-
-
-# print(lista2)
+print("Print normal:")
+lista.print()
+print("Print reverso:")
+lista.printReverso()
